@@ -45,6 +45,7 @@ class GamePortingToolkitCompiler < Formula
                       "-DLLVM_HOST_TRIPLE=x86_64-apple-darwin",
                       "-DLLVM_INSTALL_TOOLCHAIN_ONLY=On",
                       "-DLLVM_ENABLE_PROJECTS=clang",
+                      "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
                       buildpath/"llvm"
                       
         if verbose?
